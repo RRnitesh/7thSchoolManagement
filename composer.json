@@ -1,0 +1,15 @@
+{
+    "name": "dell/school-management-system",
+    "type": "project",
+    "authors": [
+        {
+            "name": "nitesh"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    }
+}

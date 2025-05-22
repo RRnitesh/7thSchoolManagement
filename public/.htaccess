@@ -1,0 +1,22 @@
+# /.htaccess => location is at root directory (should be in /public for most PHP apps like Laravel)
+RewriteEngine On 
+# Enables the Apache rewrite engine
+
+RewriteBase /SchoolManagementSystem/public/
+# Base path of the app relative to the web root (needed if your app isn't at server root)
+# meaning the index.php file is located in the public directory 
+
+# Redirect all requests to index.php 
+# First, check if the request is for a real file or directory.
+# If not, redirect it to index.php (so PHP can handle routing)
+
+RewriteCond %{REQUEST_FILENAME} !-f
+# If the requested path is NOT a file
+
+RewriteCond %{REQUEST_FILENAME} !-d
+# If the requested path is NOT a directory
+
+RewriteRule ^(.*)$ index.php [QSA,L]
+# Redirect everything else to index.php
+# QSA: keeps query parameters (?id=5)
+# L: last rule (stop processing others)
