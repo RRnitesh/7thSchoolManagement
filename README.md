@@ -1,2 +1,4 @@
-#school smart result generation and student preformance prediction system
+# school smart result generation and student preformance prediction system
+
+this is changed by main
 
