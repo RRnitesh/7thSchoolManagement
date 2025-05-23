@@ -5,6 +5,7 @@ use App\Controllers\HomeController;
 require_once __DIR__ . '/../vendor/autoload.php';
 # web.php (fix the filename extension if it's not .php)
 
+
 # on the provided url it only returns the path say http://localhost/SchoolManagementSystem/public/product?id=5
 # then it gets /SchoolManagementSystem/product only other parts are ignored 
 # but still the query string is available using GET
@@ -21,6 +22,10 @@ if ($uri === '' || $uri === '/') {
 }else if ($uri === '/about') {
     $home = new HomeController();
     $home->about();
+}else if ($uri === '/contact') {
+    $home = new HomeController();
+    $home->contact();
 }else{
   return http_response_code(404);
 }
+

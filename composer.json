@@ -6,7 +6,9 @@
             "name": "nitesh"
         }
     ],
-    "require": {},
+    "require": {
+        "phpoffice/phpspreadsheet": "^4.2"
+    },
     "autoload": {
         "psr-4": {
             "App\\": "app/"

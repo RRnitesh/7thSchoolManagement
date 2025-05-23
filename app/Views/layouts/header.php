@@ -10,6 +10,8 @@
   
   <link rel="stylesheet" href="<?= $css ?>">
 
+  <script src="<?= $js ?>"></script>
+
 </head>
 <body>
   
@@ -28,6 +30,9 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/SchoolManagementSystem/public/about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/SchoolManagementSystem/public/contact">Contact</a>
       </li>
 
   </div>
