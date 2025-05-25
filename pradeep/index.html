@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <div>
+<form action="2.php" method="post">
+        <label for="class">Select a class</label>
+        <br>
+        <select name="class" id="class">
+            <option value="class1">class1</option>
+            <option value="class2">class2</option>
+            <option value="class3">class3</option>
+            <option value="class4">class4</option>
+            <option value="class5">class5</option>
+        </select>
+
+        <br>
+        <label for="subject">Select a subject</label>
+        <br>
+        <select name="subject" id="subject">
+            <option value="Science">Science</option>
+            <option value="English">English</option>
+            <option value="Maths">Maths</option>
+            <option value="Nepali">Nepali</option>
+            <option value="Computer">Computer</option>
+        </select>
+       
+        <button type="submit" onsubmit="alert('You clicked submit')">Next</button>
+    </form>
+    </div>
+
+</body>
+</html>
