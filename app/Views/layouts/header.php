@@ -34,6 +34,8 @@
       <li class="nav-item">
         <a class="nav-link" href="/SchoolManagementSystem/public/contact">Contact</a>
       </li>
-
+      <li class="nav-item">
+        <a class="nav-link" href="/SchoolManagementSystem/public/database">Data base Connection</a>
+      </li>
   </div>
 </nav>

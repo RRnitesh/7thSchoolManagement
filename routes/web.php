@@ -1,8 +1,8 @@
 <?php
 
 use App\Controllers\HomeController;
+use App\Controllers\StudentController;
 
-require_once __DIR__ . '/../vendor/autoload.php';
 # web.php (fix the filename extension if it's not .php)
 
 
@@ -25,6 +25,9 @@ if ($uri === '' || $uri === '/') {
 }else if ($uri === '/contact') {
     $home = new HomeController();
     $home->contact();
+}else if ($uri === '/database') {
+    $student = new StudentController();
+    $student->store();
 }else{
   return http_response_code(404);
 }
