@@ -46,4 +46,14 @@ class HomeController{
     require __DIR__ . '/../Views/layouts/main.php';
   }
 
+  public function database(){
+    $title = "Database";
+    $css = "/SchoolManagementSystem/public/assets/css/database.css";
+    // $js = "/SchoolManagementSystem/public/assets/js/database.js";
+    ob_start();
+    require __DIR__ . '/../Views/pages/database.php';
+    $content = ob_get_clean();
+    require __DIR__ . '/../Views/layouts/main.php';
+  }
+
 }

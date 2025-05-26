@@ -26,9 +26,31 @@ if ($uri === '' || $uri === '/') {
     $home = new HomeController();
     $home->contact();
 }else if ($uri === '/database') {
-    $student = new StudentController();
-    $student->store();
+    // $student = new StudentController();
+    // $student->store();
+$home = new HomeController();
+    $home->database();
+
+
 }else{
   return http_response_code(404);
+  echo "404 Not Found";
 }
 
+// else if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+//     if ($uri === '/submit-student') {
+//         $studentController = new StudentController();
+
+//         // manually pass $_POST since Request object won't work in plain PHP
+//         $request = (object) [
+//             'input' => function($key) {
+//                 return $_POST[$key] ?? null;
+//             }
+//         ];
+
+//         $studentController->store($request);
+//     } else {
+//         http_response_code(404);
+//         echo "404 Not Found";
+//     }
+// }
