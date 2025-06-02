@@ -10,20 +10,20 @@
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="<?= $css ?>">
-
+  <link rel="stylesheet" href="/SchoolManagementSystem/public/assets/css/app.css">
   <script src="<?= $js ?>"></script>
 
 </head>
 <body>
   
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+  <a class="navbar-brand" href="/SchoolManagementSystem/public/">Navbar</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent" >
     <ul class="navbar-nav mr-auto">
 
       <li class="nav-item ">
